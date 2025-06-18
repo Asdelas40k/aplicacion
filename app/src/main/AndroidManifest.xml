@@ -24,10 +24,7 @@
         <activity
             android:name=".Primera"
             android:exported="false" />
-        <activity
-            android:name=".Inicio"
-            android:exported="false"
-            android:theme="@style/Theme.Proyecto" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
