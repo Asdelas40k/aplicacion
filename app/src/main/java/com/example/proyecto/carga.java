@@ -1,5 +1,6 @@
 package com.example.proyecto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ProgressBar;
@@ -21,18 +22,15 @@ public class carga extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_carga);
 
-        // Configuración de insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // Referencias a las vistas
         ProgressBar progressBar = findViewById(R.id.Progreso);
         TextView randomTextView = findViewById(R.id.mensajitos);
 
-        // Array de textos
         String[] texts = {
                 "La función del historiador no es amar el pasado, ni emanciparse del pasado, " +
                         "pero sí dominarlo y comprenderlo como la clave para el entendimiento del presente.",
@@ -43,19 +41,16 @@ public class carga extends AppCompatActivity {
                 "El pasado está lleno de aventuras... ¡y los historiadores son quienes las descubren!"
         };
 
-        // Selección de texto aleatorio y asignación al TextView
         String randomText = getRandomText(texts);
         randomTextView.setText(randomText);
 
-        // Configuración del ProgressBar
         progressBar.setMax(100);
         simulateProgressBar(progressBar, 15000);
     }
 
-    // Simula el progreso del ProgressBar
     private void simulateProgressBar(ProgressBar progressBar, int duration) {
-        int interval = 50; // Intervalo de actualización (milisegundos)
-        int totalSteps = duration / interval; // Total de pasos
+        int interval = 50;
+        int totalSteps = duration / interval;
         Handler handler = new Handler();
         Runnable runnable = new Runnable() {
             int progress = 0;
@@ -67,15 +62,21 @@ public class carga extends AppCompatActivity {
                     progress++;
                     handler.postDelayed(this, interval);
                 } else {
-                    handler.removeCallbacks(this); // Detiene el Runnable
+                    handler.removeCallbacks(this);
+                    navigateToNextActivity();
                 }
             }
         };
 
-        handler.post(runnable); // Inicia la simulación
+        handler.post(runnable);
     }
 
-    // Obtiene un texto aleatorio del array
+    private void navigateToNextActivity() {
+        Intent intent = new Intent(carga.this, significado.class);
+        startActivity(intent);
+        finish();
+    }
+
     private String getRandomText(String[] texts) {
         Random random = new Random();
         int randomIndex = random.nextInt(texts.length);
