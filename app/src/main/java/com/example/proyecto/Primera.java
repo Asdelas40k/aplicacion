@@ -1,7 +1,9 @@
 package com.example.proyecto;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -25,11 +27,22 @@ public class Primera extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Button btnsi = findViewById(R.id.btnsi);
+        Button btnno = findViewById(R.id.btnno);
+        btnsi.setOnClickListener(v -> finishAffinity());
 
+        btnsi.setOnClickListener(v -> {
+
+            Intent intent = new Intent(Primera.this, carga.class);
+            startActivity(intent);
+        });
         TextView userTextView = findViewById(R.id.txtbienv);
         SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         String savedUser = preferences.getString(KEY_USER, "");
         String message = "Hola " + savedUser + ", ¿quieres ingresar a una nueva aventura?";
         userTextView.setText(message);
     }
+
+
+
 }

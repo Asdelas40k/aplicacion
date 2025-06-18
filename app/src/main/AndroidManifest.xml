@@ -13,6 +13,19 @@
         android:theme="@style/Theme.Proyecto"
         tools:targetApi="31">
         <activity
+            android:name=".VIdeo1"
+            android:exported="false" />
+        <activity
+            android:name=".significado"
+            android:exported="false" />
+        <activity
+            android:name=".Quees"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto" />
+        <activity
+            android:name=".carga"
+            android:exported="false" />
+        <activity
             android:name=".Principal2"
             android:exported="false" />
         <activity
@@ -21,10 +34,6 @@
         <activity
             android:name=".Primera"
             android:exported="false" />
-        <activity
-            android:name=".Inicio"
-            android:exported="false"
-            android:theme="@style/Theme.Proyecto" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
