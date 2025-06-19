@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#f81c64"
+    android:layout_height="match_parent"
+    tools:context=".americatriv">
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:background="#fffcbc"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="CUESTIONARIO"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Pregunta 1 -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="1.- ¿Que avances lograron las civilizaciones precolombinas?"
+
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1a"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+
+            android:background="#fffcbc"
+            android:text="a) Agricultura, astronomia y arquitectura"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton1b"
+            android:layout_width="138dp"
+            android:layout_height="19dp"
+
+            android:text="b) Electricidad y navegacion"
+            android:background="#fffcbc"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton1c"
+            android:layout_width="162dp"
+            android:layout_height="21dp"
+
+            android:text="c) La imprenta y maquinaria"
+            android:background="#fffcbc"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <!-- Pregunta 2 -->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2.- ¿Que cultura es considerada la madre de Mesoamerica?"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButton2a"
+            android:layout_width="192dp"
+            android:layout_height="20dp"
+            android:background="#fffcbc"
+            android:text="a) maya"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton2b"
+            android:layout_width="207dp"
+            android:layout_height="18dp"
+
+            android:background="#fffcbc"
+            android:text="b) Inca"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton2c"
+            android:layout_width="131dp"
+            android:layout_height="18dp"
+
+            android:background="#fffcbc"
+            android:text="c) Olmeca"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <!-- Pregunta 3 -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3.- ¿Cual fue la primera etapa de la historia moderna de America?"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButton3a"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+
+            android:background="#fffcbc"
+            android:text="a) Epoca Colonial"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton3b"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+
+            android:background="#fffcbc"
+            android:text="b) Independencia"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton3c"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+
+            android:background="#fffcbc"
+            android:text="c) Descubrimiento y Conquista"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <!-- Pregunta 4 -->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4.- ¿Que potencias iniciaron la colonizacion de America?"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButton4a"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:background="#fffcbc"
+
+            android:text="a) Inglaterra y Francia"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton4b"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+
+            android:background="#fffcbc"
+            android:text="b) España y Portugal"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton4c"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+
+            android:background="#fffcbc"
+            android:text="c) Alemania y Rusia"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <!-- Pregunta 5 -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5.- ¿Que temas fueron centrales tras la llegada de los europeos en America ?"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButton5a"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+
+            android:background="#fffcbc"
+            android:text="a) Descubrimientos cientificos y democracia"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton5b"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:background="#fffcbc"
+            android:text="b) Mestizaje, explotacion y formacion de estaods"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton5c"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:background="#fffcbc"
+            android:text="c) Revolucion industrial y urbanizacion"
+            android:textColor="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <!-- Botón Enviar respuestas -->
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar respuestas"
+        android:background="#fffcbc"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Botón Siguiente -->
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:enabled="false"
+        android:background="#fffcbc"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup5"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

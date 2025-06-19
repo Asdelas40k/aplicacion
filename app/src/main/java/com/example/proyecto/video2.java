@@ -37,6 +37,7 @@ public class video2 extends AppCompatActivity {
         Button btnPrev = findViewById(R.id.btnants);
         Button btnNext = findViewById(R.id.btndps);
 
+        videoView.stopPlayback();
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.europa);
         videoView.setVideoURI(videoUri);
         videoView.start();
@@ -77,7 +78,7 @@ public class video2 extends AppCompatActivity {
         });
 
         btnNext.setOnClickListener(v -> {
-            Intent intent = new Intent(video2.this, africatriv.class);  // Avanza a africatriv
+            Intent intent = new Intent(video2.this, europatriv.class);  // Avanza a africatriv
             startActivity(intent);
         });
     }

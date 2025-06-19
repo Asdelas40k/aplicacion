@@ -36,6 +36,7 @@ public class VIdeo1 extends AppCompatActivity {
         Button playPauseButton = findViewById(R.id.playPauseButton);
         Button Ants = findViewById(R.id.btnants);
         Button Dps = findViewById(R.id.btndps);
+        videoView.stopPlayback();
 
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.africa);
         videoView.setVideoURI(videoUri);

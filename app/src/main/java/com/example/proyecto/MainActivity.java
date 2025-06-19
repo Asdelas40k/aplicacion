@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String KEY_USER = "username";
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Button Mini = findViewById(R.id.btnini);
         Button Msalir = findViewById(R.id.btnsalir);
         EditText Musuario = findViewById(R.id.usuario);
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -54,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("userInput", inputText);
             startActivity(intent);
         });
+
     }
+
+
 }
 

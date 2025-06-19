@@ -49,7 +49,7 @@ public class carga extends AppCompatActivity {
         randomTextView.setText(randomText);
 
         progressBar.setMax(100);
-        simulateProgressBar(progressBar, 10000);  // 10 segundos
+        simulateProgressBar(progressBar, 10000); // 10 segundos
     }
 
     private void simulateProgressBar(ProgressBar progressBar, int duration) {
@@ -80,7 +80,7 @@ public class carga extends AppCompatActivity {
         int count = prefs.getInt(KEY_COUNT, 0);
         count++;
         if (count > 4) {
-            count = 1; // reset después de la cuarta carga
+            count = 1; // Reset después del cuarto caso
         }
 
         SharedPreferences.Editor editor = prefs.edit();
@@ -88,25 +88,19 @@ public class carga extends AppCompatActivity {
         editor.apply();
 
         Intent intent;
-        switch (count) {
-            case 1:
-                intent = new Intent(carga.this, significado.class);
-                break;
-            case 2:
-                intent = new Intent(carga.this, video2.class);
-                break;
-            case 3:
-                //intent = new Intent(carga.this, ActivityTres.class);
-                break;
-            case 4:
-               // intent = new Intent(carga.this, ActivityCuatro.class);
-                break;
-            default:
-                //intent = new Intent(carga.this, ActivityUno.class);
-                break;
+        if (count == 1) {
+            intent = new Intent(carga.this, significado.class);
+        } else if (count == 2) {
+            intent = new Intent(carga.this, video2.class);
+        } else if (count == 3) {
+            intent = new Intent(carga.this, video3.class);
+        } else if (count == 4) {
+            intent = new Intent(carga.this, video4.class);
+        } else {
+            intent = new Intent(carga.this, significado.class); // En caso de error, por defecto
         }
 
-        //startActivity(intent);
+        startActivity(intent);
         finish();
     }
 
