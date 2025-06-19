@@ -1,6 +1,5 @@
 package com.example.proyecto;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +20,9 @@ public class africatriv extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_africatriv); // Inflar el diseño correcto
 
+        // Asignar las vistas del XML
         radioGroup1 = findViewById(R.id.radioGroup1);
         radioGroup2 = findViewById(R.id.radioGroup2);
         radioGroup3 = findViewById(R.id.radioGroup3);
@@ -36,7 +37,7 @@ public class africatriv extends AppCompatActivity {
             public void onClick(View view) {
                 mostrarResultado();
                 respuestasEnviadas = true;
-                btnSiguiente.setEnabled(true); // activar botón
+                btnSiguiente.setEnabled(true); // Activar botón "Siguiente"
             }
         });
 
@@ -44,17 +45,16 @@ public class africatriv extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (respuestasEnviadas) {
-                    // Aquí puedes pasar a otra pantalla o actividad si tienes otra
-                    // Por ahora mostramos otro mensaje
+                    // Aquí puedes pasar a otra actividad si está definida
                     new AlertDialog.Builder(africatriv.this)
                             .setTitle("Siguiente")
                             .setMessage("Vamos a la siguiente sección...")
                             .setPositiveButton("OK", null)
                             .show();
 
-                    // Ejemplo: iniciar nueva actividad
-                    // Intent intent = new Intent(africatriv.this, SiguienteActivity.class);
-                    // startActivity(intent);
+                    // Si quieres iniciar otra actividad, descomenta lo siguiente:
+                     Intent intent = new Intent(africatriv.this, carga.class);
+                     startActivity(intent);
                 }
             }
         });
