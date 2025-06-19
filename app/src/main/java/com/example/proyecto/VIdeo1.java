@@ -37,7 +37,7 @@ public class VIdeo1 extends AppCompatActivity {
         Button Ants = findViewById(R.id.btnants);
         Button Dps = findViewById(R.id.btndps);
 
-        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.vidprb);
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.africa);
         videoView.setVideoURI(videoUri);
         videoView.start();
 
@@ -74,12 +74,12 @@ public class VIdeo1 extends AppCompatActivity {
         });
 
         Ants.setOnClickListener(v -> {
-            Intent intent = new Intent(VIdeo1.this, MainActivity.class);
+            Intent intent = new Intent(VIdeo1.this, Principal2.class);
             startActivity(intent);
         });
 
         Dps.setOnClickListener(v -> {
-            Intent intent = new Intent(VIdeo1.this, MainActivity.class);
+            Intent intent = new Intent(VIdeo1.this, africatriv.class);
             startActivity(intent);
         });
     }

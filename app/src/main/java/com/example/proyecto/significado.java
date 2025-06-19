@@ -26,7 +26,7 @@ public class significado extends AppCompatActivity {
 
         Button Siguiente = findViewById(R.id.btnsiguiente);
         Siguiente.setOnClickListener(v -> {
-            Intent intent = new Intent(significado.this, MainActivity.class);
+            Intent intent = new Intent(significado.this, VIdeo1.class);
             startActivity(intent);
         });
     }
