@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#487414"
+    android:background="@drawable/backafri"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VIdeo1">
+
 
     <VideoView
         android:id="@+id/videoView"
@@ -17,55 +18,62 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.914" />
 
     <Button
         android:id="@+id/playPauseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#60443c"
+        android:layout_width="131dp"
+        android:layout_height="57dp"
+        android:background="@drawable/btnafri"
+        android:fontFamily="@font/aguafina_script"
         android:text="Pausar"
-        app:layout_constraintBottom_toTopOf="@id/btnants"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756"
         tools:ignore="TextContrastCheck" />
-
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="296dp"
-        app:layout_constraintBottom_toTopOf="@id/playPauseButton"
+        android:layout_marginBottom="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
 
     <Button
         android:id="@+id/btnants"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#60443c"
+        android:layout_width="136dp"
+        android:layout_height="61dp"
+        android:background="@drawable/btnafri"
+        android:fontFamily="@font/aguafina_script"
         android:text="antes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869"
+        app:layout_constraintVertical_bias="0.902"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btndps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#60443c"
+        android:layout_width="164dp"
+        android:layout_height="59dp"
+        android:background="@drawable/btnafri"
+        android:fontFamily="@font/aguafina_script"
         android:text="siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869"
+        app:layout_constraintVertical_bias="0.903"
         tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

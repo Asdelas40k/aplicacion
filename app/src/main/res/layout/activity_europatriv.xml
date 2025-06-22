@@ -4,37 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="#2094f4"
+    android:background="@drawable/backeuro"
     android:layout_height="match_parent"
     tools:context=".europatriv">
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="135dp"
-        android:layout_height="34dp"
-        android:background="#fffcbc"
-        android:textColor="#000000"
-        android:gravity="center"
-        android:text="CUESTIONARIO"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5" />
 
-    <!-- Pregunta 1 -->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
         android:text="1.- ¿Que invento Grecia que sigue siendo importante hoy en dia?"
-
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView5" />
+        tools:layout_editor_absoluteY="50dp" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
@@ -50,8 +35,6 @@
             android:id="@+id/radioButton1a"
             android:layout_width="wrap_content"
             android:layout_height="21dp"
-
-            android:background="#fffcbc"
             android:text="a) La electricidad"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -60,9 +43,7 @@
             android:id="@+id/radioButton1b"
             android:layout_width="138dp"
             android:layout_height="19dp"
-
             android:text="b) El automovil"
-            android:background="#fffcbc"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -70,14 +51,11 @@
             android:id="@+id/radioButton1c"
             android:layout_width="162dp"
             android:layout_height="21dp"
-
             android:text="c) La democracia"
-            android:background="#fffcbc"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
 
-    <!-- Pregunta 2 -->
     <TextView
         android:id="@+id/textView7"
         android:layout_width="0dp"
@@ -105,7 +83,6 @@
             android:id="@+id/radioButton2a"
             android:layout_width="192dp"
             android:layout_height="20dp"
-            android:background="#fffcbc"
             android:text="a) Catedrales goticas"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -114,8 +91,6 @@
             android:id="@+id/radioButton2b"
             android:layout_width="207dp"
             android:layout_height="18dp"
-
-            android:background="#fffcbc"
             android:text="b) Acueductos y caminos"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -124,14 +99,11 @@
             android:id="@+id/radioButton2c"
             android:layout_width="131dp"
             android:layout_height="18dp"
-
-            android:background="#fffcbc"
             android:text="c) Piramides"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
 
-    <!-- Pregunta 3 -->
     <TextView
         android:id="@+id/textView8"
         android:layout_width="0dp"
@@ -160,8 +132,6 @@
             android:id="@+id/radioButton3a"
             android:layout_width="147dp"
             android:layout_height="wrap_content"
-
-            android:background="#fffcbc"
             android:text="a) Capitalismo"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -170,8 +140,6 @@
             android:id="@+id/radioButton3b"
             android:layout_width="137dp"
             android:layout_height="wrap_content"
-
-            android:background="#fffcbc"
             android:text="b) Socialismo"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -180,14 +148,11 @@
             android:id="@+id/radioButton3c"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
-
-            android:background="#fffcbc"
             android:text="c) Feudalismo"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
 
-    <!-- Pregunta 4 -->
     <TextView
         android:id="@+id/textView9"
         android:layout_width="0dp"
@@ -215,8 +180,6 @@
             android:id="@+id/radioButton4a"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
-            android:background="#fffcbc"
-
             android:text="a) Alemania"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -225,8 +188,6 @@
             android:id="@+id/radioButton4b"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
-
-            android:background="#fffcbc"
             android:text="b) Francia"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -235,14 +196,11 @@
             android:id="@+id/radioButton4c"
             android:layout_width="141dp"
             android:layout_height="wrap_content"
-
-            android:background="#fffcbc"
             android:text="c) Inglaterra"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
 
-    <!-- Pregunta 5 -->
     <TextView
         android:id="@+id/textView10"
         android:layout_width="0dp"
@@ -271,8 +229,6 @@
             android:id="@+id/radioButton5a"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
-
-            android:background="#fffcbc"
             android:text="a) El parlamento"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -281,7 +237,6 @@
             android:id="@+id/radioButton5b"
             android:layout_width="197dp"
             android:layout_height="wrap_content"
-            android:background="#fffcbc"
             android:text="b) La iglesia catolica"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
@@ -290,36 +245,30 @@
             android:id="@+id/radioButton5c"
             android:layout_width="171dp"
             android:layout_height="wrap_content"
-            android:background="#fffcbc"
             android:text="c) Los sindicatos"
             android:textColor="#000000"
             tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
 
-    <!-- Botón Enviar respuestas -->
     <Button
         android:id="@+id/btnEnviar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="192dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btneuro"
+        android:fontFamily="@font/aguafina_script"
         android:text="Enviar respuestas"
-        android:background="#fffcbc"
-        app:layout_constraintTop_toBottomOf="@id/radioGroup5"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp" />
+        app:layout_constraintTop_toBottomOf="@id/radioGroup5" />
 
-    <!-- Botón Siguiente -->
     <Button
         android:id="@+id/btnSiguiente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Siguiente"
+        android:layout_width="161dp"
+        android:layout_height="73dp"
+        android:background="@drawable/btneuro"
+        android:fontFamily="@font/aguafina_script"
         android:enabled="false"
-        android:background="#fffcbc"
-        app:layout_constraintTop_toBottomOf="@id/radioGroup5"
+        android:text="Siguiente"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp" />
-
+        app:layout_constraintTop_toBottomOf="@id/radioGroup5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

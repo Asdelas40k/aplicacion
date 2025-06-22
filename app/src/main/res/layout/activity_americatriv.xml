@@ -222,8 +222,8 @@
 
         <RadioButton
             android:id="@+id/radioButton4b"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_width="284dp"
+            android:layout_height="18dp"
 
             android:background="#fffcbc"
             android:text="b) España y Portugal"
@@ -232,7 +232,7 @@
 
         <RadioButton
             android:id="@+id/radioButton4c"
-            android:layout_width="141dp"
+            android:layout_width="276dp"
             android:layout_height="wrap_content"
 
             android:background="#fffcbc"
@@ -268,7 +268,7 @@
 
         <RadioButton
             android:id="@+id/radioButton5a"
-            android:layout_width="164dp"
+            android:layout_width="343dp"
             android:layout_height="wrap_content"
 
             android:background="#fffcbc"
@@ -278,7 +278,7 @@
 
         <RadioButton
             android:id="@+id/radioButton5b"
-            android:layout_width="197dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#fffcbc"
             android:text="b) Mestizaje, explotacion y formacion de estaods"
@@ -287,8 +287,8 @@
 
         <RadioButton
             android:id="@+id/radioButton5c"
-            android:layout_width="171dp"
-            android:layout_height="wrap_content"
+            android:layout_width="337dp"
+            android:layout_height="18dp"
             android:background="#fffcbc"
             android:text="c) Revolucion industrial y urbanizacion"
             android:textColor="#000000"

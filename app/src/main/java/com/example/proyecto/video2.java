@@ -21,6 +21,9 @@ public class video2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        MusicService.stopMusic();
+        stopService(new Intent(this, MusicService.class));
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_video2);

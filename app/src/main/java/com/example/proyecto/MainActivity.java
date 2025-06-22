@@ -41,7 +41,11 @@ public class MainActivity extends AppCompatActivity {
         String savedUser = preferences.getString(KEY_USER, "");
         Musuario.setText(savedUser);
 
-        Msalir.setOnClickListener(v -> finishAffinity());
+        Msalir.setOnClickListener(v -> {
+            stopService(new Intent(this, MusicService.class));
+            finishAffinity();
+        });
+
 
         Mini.setOnClickListener(v -> {
             String inputText = Musuario.getText().toString();
@@ -56,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("userInput", inputText);
             startActivity(intent);
         });
+
+        Intent musicServiceIntent = new Intent(this, MusicService.class);
+        startService(musicServiceIntent);
+
 
     }
 

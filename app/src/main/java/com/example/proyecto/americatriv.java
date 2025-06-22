@@ -37,7 +37,7 @@ public class americatriv extends AppCompatActivity {
             public void onClick(View view) {
                 mostrarResultado();
                 respuestasEnviadas = true;
-                btnSiguiente.setEnabled(true); // Activar botón "Siguiente"
+                btnSiguiente.setEnabled(true);
             }
         });
 
@@ -45,7 +45,7 @@ public class americatriv extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (respuestasEnviadas) {
-                    // Aquí puedes pasar a otra actividad si está definida
+
                     new AlertDialog.Builder(americatriv.this)
                             .setTitle("Siguiente")
                             .setMessage("Vamos a la siguiente sección...")
@@ -53,7 +53,7 @@ public class americatriv extends AppCompatActivity {
                             .show();
 
                     // Si quieres iniciar otra actividad, descomenta lo siguiente:
-                    Intent intent = new Intent(americatriv.this, carga.class);
+                    Intent intent = new Intent(americatriv.this, brujula.class);
                     startActivity(intent);
                 }
             }
@@ -64,11 +64,11 @@ public class americatriv extends AppCompatActivity {
         int correctas = 0;
 
         // Comprobación de las respuestas correctas
-        if (radioGroup1.getCheckedRadioButtonId() == R.id.radioButton1b) correctas++;
-        if (radioGroup2.getCheckedRadioButtonId() == R.id.radioButton2b) correctas++;
-        if (radioGroup3.getCheckedRadioButtonId() == R.id.radioButton3a) correctas++;
-        if (radioGroup4.getCheckedRadioButtonId() == R.id.radioButton4c) correctas++;
-        if (radioGroup5.getCheckedRadioButtonId() == R.id.radioButton5b) correctas++;
+        if (radioGroup1.getCheckedRadioButtonId() == R.id.radioButton1a) correctas++; // 1a
+        if (radioGroup2.getCheckedRadioButtonId() == R.id.radioButton2c) correctas++; // 2c
+        if (radioGroup3.getCheckedRadioButtonId() == R.id.radioButton3c) correctas++; // 3c
+        if (radioGroup4.getCheckedRadioButtonId() == R.id.radioButton4b) correctas++; // 4b
+        if (radioGroup5.getCheckedRadioButtonId() == R.id.radioButton5b) correctas++; // 5b
 
         String mensaje = "FELICIDADES HAS RESPONDIDO " + correctas + "/5 PREGUNTAS CORRECTAS";
 
